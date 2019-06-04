@@ -7,6 +7,7 @@
  */
 class diaria{
     public static function nova(){
-        echo "NOVA";
+        require_once (views."theme/header.phtml");
+        require_once (views."forms/diaria.phtml");
     }
 }

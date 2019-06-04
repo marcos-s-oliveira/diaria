@@ -29,6 +29,30 @@ Code By @MarcosOliveira
             window.print();
             window.close();
         }
+        function retroativo(data) {
+            let date = new Date();
+            date.setDate(date.getDate() + 30);
+            let  hoje = date.getFullYear()+"-0"+date.getMonth()+"-0"+date.getDay();
+            if (Date.parse(data) <= Date.parse(hoje)){
+                let confirma = confirm("Confirma o uso de data retoativa?\n Sua solicitação pode não ser atendida.");
+
+                if(confirma) {
+                    document.getElementById('msg_retroativo').innerText="Solicitção com data retroativa."
+                }else{
+
+                    document.getElementById('inicio').value = "0-0-0";
+                }
+            }
+        }
+        function validaFim(data) {
+            let inicio = document.getElementById('inicio').value;
+            let dataInicio = Date.parse(inicio);
+            let fim = Date.parse(data);
+            if (fim < dataInicio){
+                alert("Data final menor que data inicial");
+                document.getElementById('fim').value = "0-0-0";
+            }
+        }
         </script>
             
     </head>

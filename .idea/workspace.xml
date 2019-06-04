@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fb33305-9b47-4b57-bd09-204bf9fe3daa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/diaria.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/home.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/forms/diaria.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/anexo/body.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/anexo/body.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/diaria.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/diaria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/theme/header.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/theme/header.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,16 +20,46 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/home.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="4" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/home.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/diaria.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/home/home.phtml">
+        <entry file="file://$PROJECT_DIR$/app/views/forms/diaria.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+            <state relative-caret-position="158">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#center#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/theme/header.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -40,6 +69,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>style=&quot;text-align: left; font-weight: bold; background-color: #999; padding-left: 10px;&quot;</find>
+      <find>form</find>
     </findStrings>
     <replaceStrings>
       <replace>class=&quot;primary_line&quot;</replace>
@@ -51,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/views/anexo/body.php" />
         <option value="$PROJECT_DIR$/app/classes/Servidor.php" />
@@ -61,8 +90,11 @@
         <option value="$PROJECT_DIR$/app/views/anexo/body.phtml" />
         <option value="$PROJECT_DIR$/app/controllers/exibir.php" />
         <option value="$PROJECT_DIR$/app/controllers/home.php" />
-        <option value="$PROJECT_DIR$/app/controllers/diaria.php" />
         <option value="$PROJECT_DIR$/app/views/home/home.phtml" />
+        <option value="$PROJECT_DIR$/app/controllers/diaria.php" />
+        <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/app/views/theme/header.phtml" />
+        <option value="$PROJECT_DIR$/app/views/forms/diaria.phtml" />
       </list>
     </option>
   </component>
@@ -70,6 +102,9 @@
     <servers>
       <server host="127.0.0.1" id="31b70090-a620-47ee-8e71-44ffb4543d66" name="localhost" />
     </servers>
+  </component>
+  <component name="PhpTemplates">
+    <option name="NEW_PHP_FILE_LAST_EXTENSION" value="phtml" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1536" />
@@ -121,7 +156,19 @@
               <item name="diaria" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diaria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diaria" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diaria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diaria" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,12 +215,12 @@
       <option name="presentableId" value="Default" />
       <updated>1559590176322</updated>
       <workItem from="1559590194864" duration="2007000" />
-      <workItem from="1559649566502" duration="2392000" />
+      <workItem from="1559649566502" duration="9732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9439000" />
+    <option name="totallyTimeSpent" value="16779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1352" y="-8" width="1376" height="744" extended-state="6" />
@@ -210,20 +257,10 @@
     <entry file="file://$PROJECT_DIR$/app/views/anexo/footer.phtml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/theme/header.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="155" column="42" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -282,24 +319,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/home.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="4" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/diaria.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="170">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/home.phtml">
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="-253">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/theme/header.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/forms/diaria.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#center#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
