@@ -15,7 +15,7 @@ class conecta{
         $db     = "law-pro";
         $link = mysqli_connect($host,$user,$pass,$db);
         if(!$link){
-            die("Falha na conexao: " . mysqli_connect_error($link));
+            die("Falha na conexao: " . mysqli_connect_error());
         }
         $conn=mysqli_connect($host,$user,$pass,$db);
         mysqli_set_charset($conn,"utf8");
