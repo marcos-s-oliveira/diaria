@@ -5,6 +5,27 @@
  * Date: 04/06/2019
  * Time: 08:41
  */
+if(isset($_POST['cpf'])){
+    $cpf = addslashes($_POST['cpf']);
+    $pernoite = addslashes($_POST['pernoite']);
+    $local = addslashes($_POST['local']);
+    $origem = addslashes($_POST['origem']);
+    $destino = addslashes($_POST['destino']);
+    $carro = addslashes($_POST['carro']);
+    $kmValor = addslashes($_POST['kmValor']);
+    $km = addslashes($_POST['km']);
+    $inicio = addslashes($_POST['inicio']);
+    $fim = addslashes($_POST['fim']);
+    $quantDiaria = addslashes($_POST['quantDiaria']);
+    $valorDiaria = addslashes($_POST['valorDiaria']);
+    $objetivo = addslashes($_POST['objetivo']);
+
+    $query = "INSERT INTO diarias()VALUES()";
+
+    require_once (models."sql.php");
+    $sql = new sql;
+    $sql->insert($query);
+}
 ?>
 <div class="container">
     <form action="" method="post">
@@ -24,12 +45,15 @@
         <input type="text" id="origem" name="origem" class="form-control" required placeholder="Local de saída da viagem"><br>
         <input type="text" id="destino" name="destino" class="form-control" required placeholder="Local de destino da viagem">
         <label for="carro">Veículo</label>
-        <select id="carro" name="carro" class="form-control" required>
+        <select id="carro" name="carro" class="form-control" required onchange="if(this.value != 1){carroProprio();}else{document.getElementById('carro_proprio').innerHTML = ''}">
             <option value="1">Veículo Oficial</option>
             <option value="2">Veículo Próprio</option>
             <option value="3">Transporte Rodoviário</option>
             <option value="4">Transporte Aéreo</option>
         </select>
+        <div class="form-inline" id="carro_proprio">
+
+        </div>
         <label for="permanencia">Permanência</label>
         <div class="form-inline">
                 <label for="inicio">Início</label>
@@ -37,7 +61,17 @@
                 <label for="fim">Fim</label>
                 <input class="form-control mb-2 mr-sm-2" type="date" name="fim" id="fim" required onchange="validaFim(this.value)">
         </div>
-
+        <br>
+        <label for="valor">Valor da(s) Diária(s)</label>
+        <div class="form-inline">
+            <label for="inicio">Quantidade</label>
+            <input class="form-control mb-2 mr-sm-2" type="number" name="quantDiaria" id="quant" required >
+            <label for="valor">Valor</label>
+            <input class="form-control mb-2 mr-sm-2" type="number" name="valorDiaria" id="valor" required>
+        </div><br>
+        <label for="objetivo">Objetivo da Viagem</label>
+        <textarea name="objetivo" id="objetivo" class="form-control" required></textarea>
+        <button type="submit" class="btn btn-sm btn-success"><i class="fas fa-check"></i>Enviar</button>
     </form>
     <center>
         <p class="muted" style="color: #900" id="msg_retroativo"></p>
