@@ -35,11 +35,12 @@ if(isset($_POST['cpf'])){
     </script>
     <?php
 }
-?>
+?><center>
 <div class="container">
     <form action="" method="post">
         <label for="cpf">CPF</label>
-        <input type="text" name="cpf" id="cpf" class="form-control" required autofocus>
+        <input type="text" name="cpf" id="cpf" class="form-control" onkeyup="validaCpf(this.value);" required autofocus>
+        <div id="msg_cpf"></div>
         <label for="tipo">Tipo de Viagem</label>
         <select id="pernoite" name="pernoite" class="form-control" required>
             <option value="false">Sem Pernoite</option>
@@ -79,10 +80,10 @@ if(isset($_POST['cpf'])){
             <input class="form-control mb-6 mr-sm-6" type="number" name="valorDiaria" id="valor" required>
         </div><br>
         <label for="objetivo">Objetivo da Viagem</label>
-        <textarea name="objetivo" id="objetivo" class="form-control" required></textarea>
+        <textarea name="objetivo" id="objetivo" class="form-control" required></textarea><br>
         <button type="submit" class="btn btn-sm btn-success"><i class="fas fa-check"></i>Enviar</button>
     </form>
-    <center>
+
         <p class="muted" style="color: #900" id="msg_retroativo"></p>
     </center>
 </div>
