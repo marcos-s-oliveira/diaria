@@ -8,11 +8,13 @@
  */
 
 class conecta{
+
+
     public static function local(){
         $host   = "127.0.0.1";
         $user   = "root";
         $pass   = "";
-        $db     = "law-pro";
+        $db     = "diarias";
         $link = mysqli_connect($host,$user,$pass,$db);
         if(!$link){
             die("Falha na conexao: " . mysqli_connect_error());

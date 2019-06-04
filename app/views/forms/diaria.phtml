@@ -20,11 +20,20 @@ if(isset($_POST['cpf'])){
     $valorDiaria = addslashes($_POST['valorDiaria']);
     $objetivo = addslashes($_POST['objetivo']);
 
-    $query = "INSERT INTO diarias()VALUES()";
+    $query = "INSERT INTO diarias(cpf, pernoite, local, origem, destino, carro, kmValor, km, inicio, fim, quantDiaria, valorDiaria, objetivo)
+                            VALUES('$cpf', '$pernoite', '$local', '$origem', '$destino', '$carro', '$kmValor', '$km', '$inicio', '$fim', '$quantDiaria', '$valorDiaria', '$objetivo')";
 
     require_once (models."sql.php");
     $sql = new sql;
-    $sql->insert($query);
+    $result = $sql->insert($query);
+    if(!$result){
+        die($result);
+    }
+    ?>
+    <script type="text/javascript">
+        window.close();
+    </script>
+    <?php
 }
 ?>
 <div class="container">
@@ -57,17 +66,17 @@ if(isset($_POST['cpf'])){
         <label for="permanencia">Permanência</label>
         <div class="form-inline">
                 <label for="inicio">Início</label>
-                <input class="form-control mb-2 mr-sm-2" type="date" name="inicio" id="inicio" required onchange="retroativo(this.value)">
+                <input class="form-control mb-6 mr-sm-6" type="date" name="inicio" id="inicio" required onchange="retroativo(this.value)">
                 <label for="fim">Fim</label>
-                <input class="form-control mb-2 mr-sm-2" type="date" name="fim" id="fim" required onchange="validaFim(this.value)">
+                <input class="form-control mb-6 mr-sm-6" type="date" name="fim" id="fim" required onchange="validaFim(this.value)">
         </div>
         <br>
         <label for="valor">Valor da(s) Diária(s)</label>
         <div class="form-inline">
             <label for="inicio">Quantidade</label>
-            <input class="form-control mb-2 mr-sm-2" type="number" name="quantDiaria" id="quant" required >
+            <input class="form-control mb-6 mr-sm-6" type="number" name="quantDiaria" id="quant" required >
             <label for="valor">Valor</label>
-            <input class="form-control mb-2 mr-sm-2" type="number" name="valorDiaria" id="valor" required>
+            <input class="form-control mb-6 mr-sm-6" type="number" name="valorDiaria" id="valor" required>
         </div><br>
         <label for="objetivo">Objetivo da Viagem</label>
         <textarea name="objetivo" id="objetivo" class="form-control" required></textarea>
