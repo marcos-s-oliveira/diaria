@@ -2,7 +2,7 @@
     <thead>
     <tr>
 
-        <td colspan="7" style="text-align: left; font-weight: bold; background-color: #999; padding-left: 10px; ">
+        <td colspan="7" class="primary_line">
          Identificação do Requerente:
         </td>
     </tr>
@@ -12,7 +12,7 @@
             <td><b>
                 Categoria:
                 </b></td>
-            <td>
+            <td colspan="5" style="text-align: left">
                 Demais Servidores
             </td>
             <td colspan="4"></td>
@@ -38,7 +38,7 @@
             </td>
         </tr>
         <tr>
-        <td colspan="7" style="text-align: left; font-weight: bold; background-color: #999; padding-left: 10px; ">
+        <td colspan="7" class="primary_line">
         Dados Bancários:
         </td>
         </tr>
@@ -66,7 +66,7 @@
     </tbody>
     <tbody>
     <tr >
-        <td colspan="7" style="text-align: left; font-weight: bold; background-color: #999; padding-left: 10px; ">
+        <td colspan="7" class="primary_line">
             Identificação do Afastamento
         </td>
     </tr>
@@ -85,14 +85,14 @@
         </td>
     </tr>
 <tr>
-    <td colspan="7" style="text-align: left; font-weight: bold; background-color: #999; padding-left: 10px;">
+    <td colspan="7" class="primary_line">
     Objetivo da Viagem:
     </td>
 </tr>
     <tr rowspan="6">
-        <td colspan="7">
+        <td colspan="7"><br>
             Participar de capacitação referente a alternativas de incrementos das receitas municipais, na Assomasul, em Campo Grande/MS, nos dias 29 e 30 de maio de 2019.
-        <br><br><br><br><br>
+        <br>
         </td>
     </tr>
     <tr>
@@ -132,13 +132,13 @@
         </td>
     </tr>
     <tr>
-        <td colspan="7" style="text-align: left; font-weight: bold; background-color: #999; padding-left: 10px;">
+        <td colspan="7" class="primary_line">
             Identificação do Valor do Quilômetro Rodado (Veículo Próprio):
         </td>
     </tr>
     <tr>
         <td>
-           <b>Quantidade:</b>
+            <b>Quantidade:</b>
         </td>
         <td>
             255
@@ -157,5 +157,57 @@
         </td>
 
     </tr>
+    <tr>
+        <td colspan="7" class="primary_line">
+            Identificação do Valor da Diária:
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Quantidade:</b>
+        </td>
+        <td>
+            1
+        </td>
+        <td>
+            <b>Valor Unitário: </b>
+        </td>
+        <td>
+            R$ 200,00
+        </td>
+        <td>
+            <b>Valor Total:</b>
+        </td>
+        <td>
+            R$ 200,00
+        </td>
+    </tr>
+    <tr>
+        <td colspan="7">
+            <br>
+            <p>
+                Venho por meio desta, requerer autorização para <b>viagem</b> conforme descrito neste formulário, bem como o recebimento da respectiva <b>diária</b>.
+            </p><br>
+        </td>
+    </tr>
     </tbody>
 </table>
+<center>
+    <p>
+        Figueirão,  03 de Junho de 2019
+    </p>
+    <div class="line_sign">
+        <hr >
+        <p>
+            Assinatura do Requerente
+        </p>
+    </div>
+
+    <div class="line_sign">
+        <hr >
+        <p>
+            Assinatura e Carimbo <small>(ordenador de Despesa)</small>
+        </p>
+    </div>
+    <button class="button" onclick="printPage();"><i class="fa fa-print"></i><b>Imprimir</b></button>
+</center>

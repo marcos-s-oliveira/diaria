@@ -23,6 +23,20 @@ td{
     vertical-align: middle;
     border: solid 1px #666;
 }
+.line_sign{
+    display: none;
+    width: 50%;
+    margin-top: 5%;
+}
+.line_sign p{
+    margin-top: -1%;
+}
+.primary_line{
+    text-align: left;
+    font-weight: bold;
+    background-color: #999;
+    padding-left: 10px;
+}
 .header-fullwidth{
     width: 100%;
 }
@@ -130,8 +144,18 @@ label{
     margin-left: 50%;
     margin-right: 0;
     font-size: 10pt;
-    
-}
+    }
+    .line_sign{
+        display: block;
+        width: 50%;
+        margin-top: 5%;
+    }
+    .primary_line{
+        text-align: left;
+        font-weight: bold;
+        background-color: #999 !important;
+        padding-left: 10px;
+    }
 button{
     display: none;
 }

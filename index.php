@@ -14,6 +14,7 @@ define('base', "../../../diaria/");
 define('models', "app/models/");
 define('views', "app/views/");
 define('controllers', "app/controllers/");
+define('classes', "app/classes");
 session_start();
 
 require_once("app/core/app.php");
