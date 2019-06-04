@@ -1,0 +1,48 @@
+
+<br><br>
+<div class="container">
+    <table class="table table-sm table bordered">
+        <thead class="table-dark">
+        <tr>
+            <td>
+                Nº
+            </td>
+            <td>
+                Servidor
+            </td>
+            <td>
+                Destino
+            </td>
+            <td>
+                Data
+            </td>
+            <td>
+                Ações
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        /**
+         * Created by PhpStorm.
+         * User: Marcos
+         * Date: 04/06/2019
+         * Time: 16:11
+         */
+        require_once (models."sql.php");
+        $sql = new sql;
+        $query = "SELECT * FROM diarias.diarias WHERE status = 0 ORDER BY id DESC";
+        $result = $sql->select($query);
+        while($row = mysqli_fetch_assoc($result)){
+            echo "<tr>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td><a href='#'><i class='fas fa-view'></i></a> <a href='#'><i class='fas fa-check'></i></a> <a href='#'><i class='fas fa-times'></i></a> </td>";
+            echo "</tr>";
+        }
+        ?>
+        </tbody>
+    </table>
+</div>

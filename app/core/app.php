@@ -16,7 +16,7 @@ class App{
                         $this->method = "index";
                     }
             }else {
-            include_once("app/views/404/404.html");
+            include_once("app/views/404/index.html");
             }
         
         $this->param = $url ? array_values($url) : [];

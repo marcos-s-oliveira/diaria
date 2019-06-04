@@ -14,4 +14,12 @@ class sql{
         $insert = mysqli_query($link, $query) OR die(mysqli_errno($link));
         return $insert;
     }
+    public function select($query){
+        require_once (models."db.php");
+        $db = new conecta;
+        $link = $db->local();
+
+        $select  = mysqli_query($link, $query);
+        return $select;
+    }
 }
