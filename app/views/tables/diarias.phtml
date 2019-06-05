@@ -29,17 +29,26 @@
          * Date: 04/06/2019
          * Time: 16:11
          */
+        require_once (classes."Servidor.php");
         require_once (models."sql.php");
         $sql = new sql;
         $query = "SELECT * FROM diarias.diarias WHERE status = 0 ORDER BY id DESC";
         $result = $sql->select($query);
         while($row = mysqli_fetch_assoc($result)){
+
+            $id = $row['id'];
+            $cpf = $row['cpf'];
+            $destino = $row['destino'];
+            $ymd = $row['inicio'];
+            $dataPart = explode("-", $ymd);
+            $data = $dataPart[2]."/".$dataPart[1]."/".$dataPart[0];
+            $servidor = new Servidor($cpf);
             echo "<tr>";
-            echo "<td></td>";
-            echo "<td></td>";
-            echo "<td></td>";
-            echo "<td></td>";
-            echo "<td><a href='#'><i class='fas fa-view'></i></a> <a href='#'><i class='fas fa-check'></i></a> <a href='#'><i class='fas fa-times'></i></a> </td>";
+            echo "<td><b>".$id."</b></td>";
+            echo "<td>".$servidor->getNome()."</td>";
+            echo "<td>".$destino."</td>";
+            echo "<td>".$data."</td>";
+            echo "<td><a href='#' onclick=\"popup('".base."exibir/anexo/$id')\"><i class='fas fa-eye'></i></a> <a href='#'><i class='fas fa-check'></i></a> <a href='#'><i class='fas fa-times'></i></a> </td>";
             echo "</tr>";
         }
         ?>

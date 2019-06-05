@@ -27,15 +27,27 @@ class Servidor{
      * @param $agencia
      * @param $conta
      */
-    public function __construct($id, $categoria, $nome, $cpf, $cargo, $banco, $agencia, $conta){
-        $this->id = $id;
-        $this->categoria = $categoria;
-        $this->nome = $nome;
+    public function __construct($cpf){
+        $query = "SELECT * FROM servidores WHERE cpf = '".$cpf."' LIMIT 1";
+        require_once(models."sql.php");
+        $sql = new sql;
+        $result = $sql->select($query);
+        $row = mysqli_fetch_assoc($result);
+
+
+        $this->id = $row['id'];
+        //$this->categoria = $categoria;
+        if($row['nome'] != ""){
+            $this->nome = $row['nome'];
+        }else{
+            $this->nome = "CPF INVÁLIDO";
+        }
+
         $this->cpf = $cpf;
-        $this->cargo = $cargo;
-        $this->banco = $banco;
-        $this->agencia = $agencia;
-        $this->conta = $conta;
+        $this->cargo = $row['cargo'];
+        //$this->banco = $banco;
+        //$this->agencia = $agencia;
+        //$this->conta = $conta;
     }
 
     /**
